@@ -1,0 +1,141 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo p{
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262; 
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FF4141;
+}
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+}
+.login{
+    width:157px ;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 74px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: #fff;
+    cursor: pointer;
+}
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+.nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: #fff;
+}
+.app__navbar-smallscreen{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s ease;
+    flex-direction: column;
+    z-index: 5;
+}
+.app__navbar-smallscreen_overlay .overlay__close{
+    font-size: 27px;
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.app__navbar-smallscreen_links{
+    list-style: none;
+}
+.app__navbar-smallscreen_links li{
+    margin: 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.app__navbar-smallscreen_links a{
+    color: #515151;
+    text-decoration: none;
+}
+.app__navbar-smallscreen_links a:hover{
+    color: #FF4141;
+}
+
+
+@media screen and (max-width:2000px){
+    .app__navbar-logo img{
+        width: 210px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .app__navbar-smallscreen{
+        display: flex;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-logo p{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    
+    .login{
+        display: none;
+        
+    }
+}
