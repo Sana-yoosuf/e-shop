@@ -13,7 +13,7 @@ const Offers = () => {
        </div>
 
        <div className="offers-right">
-        <img src={exclusive_img} alt='exclusive img'/>
+        <img src={exclusive_img} alt='exclusive img' className='img'/>
        </div>
     </div>
   )

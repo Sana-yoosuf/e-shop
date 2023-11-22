@@ -2,6 +2,7 @@
     height: 100vh;
     background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
     display: flex;
+    
 }
 
 .hero-left {
@@ -57,41 +58,65 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 
 
 
-@media screen and (max-width:2000px) {}
+@media screen and (max-width:2000px){
+   
+}
 
-@media screen and (max-width:1150px) {
+
+@media screen and (max-width:1150px){
     .hero-left {
         padding-left: 20px;
+        margin-top: 30px;
     }
-    .hero {
-        flex-direction: row;
-    }
-    
-    .hero-hand-icon img {
-        width: 90px;
-    }
-    .hero-left p {
-        font-size: 40px;
+    .hero-left h2 {
+        font-size: 25px;
         font-weight: 600;
     }
-
+    .hero-left p {
+       
+        font-size: 30px;
+        font-weight: 600;
+    } 
     .hero-right img{
-       width: 60vh;
-      
+        height: 600px;
+       
+     }  
+     .hero-right {
+       margin-top: -50px;
+       
+     }  
+     .hero {
+        height: 60vh;   
     }
+    .hero-latest-btn {
+        gap: 10px;
+        width: 210px;
+        height: 50px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+   
 }
+    
+   
 
 
-
-
-@media screen and (max-width:650px) {
+@media screen and (max-width:650px){
+    
     .hero {
-        flex-direction: row;
+        height: 105vh; 
+        flex-direction: column;
     }
-
+    .hero-right img{
+       height: 400px;
+    } 
+    
 }
